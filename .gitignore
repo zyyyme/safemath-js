@@ -92,3 +92,4 @@ services/sitemap/output/*
 /test.ts
 
 codecov
+./coverage

@@ -51,35 +51,35 @@ describe('SafeMath unit tests', () => {
         })
     })
 
-    describe('Division tests', () => {
-        it('divides when numbers are correct', () => {
-            const result = safeMath.div(6, 2)
+    // describe('Division tests', () => {
+    //     it('divides when numbers are correct', () => {
+    //         const result = safeMath.div(6, 2)
 
-            expect(result).toEqual(3)
-        })
+    //         expect(result).toEqual(3)
+    //     })
 
-        it ('throws when adding negative number', () => {
-            try {
-                const result = safeMath.div(1, 0)
-            } catch (err) {
-                expect(err.message).toEqual('Can not divide by zero')
-            }
-        })
-    })
+    //     it ('throws when adding negative number', () => {
+    //         try {
+    //             const result = safeMath.div(1, 0)
+    //         } catch (err) {
+    //             expect(err.message).toEqual('Can not divide by zero')
+    //         }
+    //     })
+    // })
 
-    describe('Modulus tests', () => {
-        it('takes modulus when numbers are correct', () => {
-            const result = safeMath.mod(6, 5)
+    // describe('Modulus tests', () => {
+    //     it('takes modulus when numbers are correct', () => {
+    //         const result = safeMath.mod(6, 5)
 
-            expect(result).toEqual(1)
-        })
+    //         expect(result).toEqual(1)
+    //     })
 
-        it ('throws when taking modulus of zero', () => {
-            try {
-                const result = safeMath.mod(1, 0)
-            } catch (err) {
-                expect(err.message).toEqual('Can not take modulus of zero')
-            }
-        })
-    })
+    //     it ('throws when taking modulus of zero', () => {
+    //         try {
+    //             const result = safeMath.mod(1, 0)
+    //         } catch (err) {
+    //             expect(err.message).toEqual('Can not take modulus of zero')
+    //         }
+    //     })
+    // })
 })
