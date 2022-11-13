@@ -5,7 +5,11 @@ on:
     branches: ["master"]
 
 jobs:
-  uses: reitermarkus/aspell@v1.0.0
-  with:
-    files: README.md
-    args: --lang=en_GB --mode=markdown
+  spellcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: spellcheck readme
+        uses: reitermarkus/aspell@v1.0.0
+        with:
+          files: README.md
+          args: --lang=en_GB --mode=markdown
