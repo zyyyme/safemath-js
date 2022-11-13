@@ -8,6 +8,7 @@ jobs:
   spellcheck:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: spellcheck readme
         uses: reitermarkus/aspell@v1.0.0
         with:
