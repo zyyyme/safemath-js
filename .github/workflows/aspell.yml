@@ -1,13 +1,11 @@
-name: Spell check readme.md
+name: Run Aspell
 
 on:
   push:
     branches: ["master"]
 
 jobs:
-  spellcheck:
-    name: Run Aspell
-    uses: reitermarkus/aspell@v1.0.0
-    with:
-      files: README.md
-      args: --lang=en_GB --mode=markdown
+  uses: reitermarkus/aspell@v1.0.0
+  with:
+    files: README.md
+    args: --lang=en_GB --mode=markdown
