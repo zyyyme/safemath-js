@@ -1,0 +1,9 @@
+uses: reitermarkus/aspell@main
+
+on:
+  push:
+    branches: ["master"]
+    
+with:
+  files: README.md
+  args: --lang=en_GB --mode=markdown
