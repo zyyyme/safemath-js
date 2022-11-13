@@ -1,5 +1,5 @@
 {
-  "name": "safemath",
+  "name": "safemath-js",
   "version": "0.0.1",
   "description": "port of solidity safemath contract",
   "main": "src/index.ts",
