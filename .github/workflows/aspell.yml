@@ -13,4 +13,4 @@ jobs:
         uses: zyyyme/aspell@v1.0.1
         with:
           files: README.md
-          args: --lang=en_GB --mode=markdown --personal=.aspell.en.pws --home-dir=.
+          args: --lang=en_GB --mode=markdown --home-dir=.
