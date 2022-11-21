@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@master
       - name: spellcheck readme
-        uses: zyyyme/aspell@v1.0.1
+        uses: zyyyme/aspell@v1.0.5
         with:
           files: README.md
           args: --lang=en_GB --mode=markdown --personal=.aspell.en.pws
